@@ -73,22 +73,10 @@ model.fit(X_train, y_train)
 ```
 
 ### **Bước 6 – Đánh giá kết quả**
-```{r}
-library(knitr)
-
-# Tạo bảng kết quả accuracy
-result <- data.frame(
-  Model = c("SGDClassifier", "MultinomialNB"),
-  Accuracy = c("73.3%", "53.3%")
-)
-
-kable(
-  result,
-  align = c("l", "c"),
-  col.names = c("Model", "Accuracy"),
-  caption = "Đánh giá kết quả mô hình"
-)
-```
+| Model         | Accuracy  |
+| ------------- | --------- |
+| SGDClassifier | **73.3%** |
+| MultinomialNB | **53.3%** |
 
 ## 4. Vai trò của tôi (Nguyễn Minh Đạt – Scrum Master/Tester)
 - Phân chia và theo dõi tiến độ nhóm
