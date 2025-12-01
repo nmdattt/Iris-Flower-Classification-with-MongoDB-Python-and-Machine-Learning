@@ -30,8 +30,9 @@ Dự án sử dụng quy trình **Scrum**, có phân chia vai trò rõ ràng, v�
 
 ### **Machine Learning**
 - Scikit-learn  
-- SGDClassifier  
-- MultinomialNB  
+- Logistic Regression
+- K-Nearest Neighbors
+- Random Forest
 
 ### **Development Tools**
 - Jupyter Notebook  
@@ -66,17 +67,13 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 ```
 
 ### **Bước 5 – Train mô hình**
-```python
-from sklearn.linear_model import SGDClassifier
-model = SGDClassifier()
-model.fit(X_train, y_train)
-```
 
 ### **Bước 6 – Đánh giá kết quả**
-| Model         | Accuracy  |
-| ------------- | --------- |
-| SGDClassifier | **73.3%** |
-| MultinomialNB | **53.3%** |
+| Model               | Accuracy|
+| ------------------- | ------- |
+| Logistic Regression | **90%** |
+| K-Nearest Neighbors | **90%** |
+| Random Forest       | **90%** |
 
 ## 4. Vai trò của tôi (Nguyễn Minh Đạt – Scrum Master/Tester)
 - Phân chia và theo dõi tiến độ nhóm
